@@ -4,6 +4,8 @@ from dataset import spiral
 import matplotlib.pyplot as plt
 
 x, t = spiral.load_data()
+print(len(x))
+
 N = 100
 CLS_NUM = 3
 markers = ['o', 'x', '^']

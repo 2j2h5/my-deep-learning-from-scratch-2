@@ -42,16 +42,10 @@ for epoch in range(max_epoch):
             print(f"| Epoch {epoch+1} | Iterataion {iters+1} | Loss {avg_loss}")
             loss_list.append(avg_loss)
             total_loss, loss_count = 0, 0
-        
-""" x = np.arange(max_epoch)
-plt.plot(x, loss_list, label='loss')
-plt.xlabel("epochs")
-plt.ylabel("loss")
-plt.show() """
 
 # 학습 결과 플롯
 plt.plot(np.arange(len(loss_list)), loss_list, label='train')
-plt.xlabel('Iteration (x10)')
+plt.xlabel('Epoch')
 plt.ylabel('Loss')
 plt.show()
 
