@@ -27,7 +27,7 @@ class Affine:
     def forward(self, x):
         W, b = self.params
         out = np.matmul(x, W) + b
-        self.x = out
+        self.x = x
         return out
     
     def backward(self, dout):

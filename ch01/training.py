@@ -51,8 +51,8 @@ plt.show() """
 
 # 학습 결과 플롯
 plt.plot(np.arange(len(loss_list)), loss_list, label='train')
-plt.xlabel('반복 (x10)')
-plt.ylabel('손실')
+plt.xlabel('Iteration (x10)')
+plt.ylabel('Loss')
 plt.show()
 
 # 경계 영역 플롯
