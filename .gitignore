@@ -1,2 +1,7 @@
 # Ignore all __pycache__ directories
 **/__pycache__/
+
+#Ignore datasets
+dataset/ptb.train.npy
+dataset/ptb.train.txt
+dataset/ptb.vocab.pkl
