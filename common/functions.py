@@ -1,4 +1,4 @@
-from common.np import *
+from  common.np import *
 
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))

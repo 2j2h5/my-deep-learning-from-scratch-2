@@ -2,6 +2,7 @@
 **/__pycache__/
 
 #Ignore datasets
-dataset/ptb.train.npy
-dataset/ptb.train.txt
+dataset/ptb.train.**
 dataset/ptb.vocab.pkl
+dataset/ptb.test.**
+dataset/ptb.valid.**
