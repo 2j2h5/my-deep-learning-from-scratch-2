@@ -19,7 +19,22 @@ class Sigmoid:
     def backward(self, dout):
         dx = dout * (1.0 - self.out) * self.out
         return dx
-    
+
+class Softmax:
+    def __init__(self):
+        self.params, self.grads = [], []
+        self.out = None
+
+    def forward(self, x):
+        self.out = softmax(x)
+        return self.out
+
+    def backward(self, dout):
+        dx = self.out * dout
+        sumdx = np.sum(dx, axis=1, keepdims=True)
+        dx -= self.out * sumdx
+        return dx
+
 class Affine:
     def __init__(self, W, b):
         self.params = [W, b]
